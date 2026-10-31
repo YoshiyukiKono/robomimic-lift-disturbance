@@ -1,0 +1,9 @@
+condition,seed,x_m,y_m,baseline_success,success,time_to_success_s,force_x_n,force_y_n,pulse_start_s,pulse_duration_s,pulse_window_completed,nonzero_force_steps,paired_xy_difference_at_pulse_end_m,video_path
+baseline,1,0.0,0.0,1,1,3.35,0,0,0.5,0.15,1,0,0.0,baseline/videos/x00_y00_trial00.mp4
+push_x_1n,1,0.0,0.0,1,0,,1,0,0.5,0.15,1,3,0.04970374891525987,push_x_1n/videos/x00_y00_trial00.mp4
+push_x_1p5n,1,0.0,0.0,1,0,,1.5,0,0.5,0.15,1,3,0.12069928245187257,push_x_1p5n/videos/x00_y00_trial00.mp4
+push_minus_x_1n,1,0.0,0.0,1,1,3.25,-1,0,0.5,0.15,1,3,0.049703751576510115,push_minus_x_1n/videos/x00_y00_trial00.mp4
+baseline,2,0.0,0.0,1,1,3.4,0,0,0.5,0.15,1,0,0.0,baseline/videos/x00_y00_trial01.mp4
+push_x_1n,2,0.0,0.0,1,1,5.7,1,0,0.5,0.15,1,3,0.05520205605286419,push_x_1n/videos/x00_y00_trial01.mp4
+push_x_1p5n,2,0.0,0.0,1,0,,1.5,0,0.5,0.15,1,3,0.13280798516003858,push_x_1p5n/videos/x00_y00_trial01.mp4
+push_minus_x_1n,2,0.0,0.0,1,1,3.7,-1,0,0.5,0.15,1,3,0.05520205605286414,push_minus_x_1n/videos/x00_y00_trial01.mp4

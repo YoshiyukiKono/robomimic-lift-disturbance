@@ -1,0 +1,2 @@
+point_id,x_m,y_m,n_trials,n_success,success_rate,wilson_low,wilson_high,mean_success_time_s,mean_elapsed_s,max_height_m
+x00_y00,0.0,0.0,2,2,1.0,0.34238022750665303,1.0,3.375,3.375,0.2722279443622221

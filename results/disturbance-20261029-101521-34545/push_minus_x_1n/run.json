@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "recording_contract": "lift-tutorial-v1",
+  "status": "completed",
+  "config": {
+    "grid_x": [
+      0.0
+    ],
+    "grid_y": [
+      0.0
+    ],
+    "repeats": 2,
+    "seed": 1,
+    "horizon": 200,
+    "lift_height_m": 0.05,
+    "hold_seconds": 1.0,
+    "width": 640,
+    "height": 480,
+    "camera": "frontview",
+    "disturbance": {
+      "start_s": 0.5,
+      "duration_s": 0.15,
+      "force_n": [
+        -1,
+        0,
+        0
+      ]
+    },
+    "control_freq": 20.0,
+    "video_fps": 20.0
+  },
+  "started_at": "2026-10-29T01:16:39.265938+00:00",
+  "episodes_completed": 2,
+  "checkpoint": {
+    "url": "https://downloads.cs.stanford.edu/downloads/rt_benchmark/model_zoo/lift/bc_rnn/lift_ph_low_dim_epoch_1000_succ_100.pth",
+    "sha256": "3ee222cab41f78ba27afca7ef6f70f9f21bd3cc0a37bd79c0b2351dbede51605",
+    "bytes": 7959022,
+    "name": "robomimic v0.1 Lift PH low_dim BC-RNN"
+  },
+  "environment": {
+    "python": "3.10.22",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "versions": {
+      "torch": "2.2.2+cu121",
+      "torchvision": "0.17.2+cu121",
+      "robomimic": "0.3.0",
+      "robosuite": "1.4.1",
+      "mujoco": "2.3.7",
+      "numpy": "1.26.4",
+      "imageio": "2.34.0",
+      "imageio-ffmpeg": "0.6.0"
+    },
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "mujoco_gl": "osmesa",
+    "git_commit": "7942b27fed9e288b9fbb89d7ec4eebea2f338a8d",
+    "original_checkpoint_environment": {
+      "env_name": "Lift",
+      "type": 1,
+      "env_kwargs": {
+        "has_renderer": false,
+        "has_offscreen_renderer": false,
+        "ignore_done": true,
+        "use_object_obs": true,
+        "use_camera_obs": false,
+        "control_freq": 20,
+        "controller_configs": {
+          "type": "OSC_POSE",
+          "input_max": 1,
+          "input_min": -1,
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "kp": 150,
+          "damping": 1,
+          "impedance_mode": "fixed",
+          "kp_limits": [
+            0,
+            300
+          ],
+          "damping_limits": [
+            0,
+            10
+          ],
+          "position_limits": null,
+          "orientation_limits": null,
+          "uncouple_pos_ori": true,
+          "control_delta": true,
+          "interpolation": null,
+          "ramp_ratio": 0.2
+        },
+        "robots": [
+          "Panda"
+        ],
+        "camera_depths": false,
+        "camera_heights": 84,
+        "camera_widths": 84,
+        "reward_shaping": false
+      }
+    },
+    "effective_environment_kwargs": {
+      "has_renderer": false,
+      "has_offscreen_renderer": true,
+      "ignore_done": true,
+      "use_object_obs": true,
+      "use_camera_obs": false,
+      "control_freq": 20,
+      "controller_configs": {
+        "type": "OSC_POSE",
+        "input_max": 1,
+        "input_min": -1,
+        "output_max": [
+          0.05,
+          0.05,
+          0.05,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "output_min": [
+          -0.05,
+          -0.05,
+          -0.05,
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "kp": 150,
+        "damping": 1,
+        "impedance_mode": "fixed",
+        "kp_limits": [
+          0,
+          300
+        ],
+        "damping_limits": [
+          0,
+          10
+        ],
+        "position_limits": null,
+        "orientation_limits": null,
+        "uncouple_pos_ori": true,
+        "control_delta": true,
+        "interpolation": null,
+        "ramp_ratio": 0.2
+      },
+      "robots": [
+        "Panda"
+      ],
+      "camera_depths": false,
+      "camera_heights": 480,
+      "camera_widths": 640,
+      "reward_shaping": false,
+      "hard_reset": true,
+      "camera_names": [
+        "frontview"
+      ]
+    }
+  },
+  "wall_seconds": 16.07054029700066
+}

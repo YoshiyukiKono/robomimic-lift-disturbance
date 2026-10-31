@@ -1,0 +1,3 @@
+point_id,x_m,y_m,trial,seed,success,env_success,elapsed_s,time_to_success_s,max_height_m,video_path,steps,max_hold_s
+x00_y00,0.0,0.0,0,1,1,1,3.25,3.25,0.2810418324267646,videos/x00_y00_trial00.mp4,65,1.0
+x00_y00,0.0,0.0,1,2,1,1,3.7,3.7,0.2474881942342395,videos/x00_y00_trial01.mp4,74,1.0

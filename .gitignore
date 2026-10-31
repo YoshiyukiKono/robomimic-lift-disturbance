@@ -1,0 +1,13 @@
+.venv/
+.tools/
+.cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+models/
+outputs/
+.env
+.DS_Store
+
+# Windows download metadata
+*:Zone.Identifier

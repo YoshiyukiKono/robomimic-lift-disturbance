@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>外乱比較</title>
+<style>body{font-family:sans-serif;max-width:1100px;margin:30px auto;padding:20px}table{border-collapse:collapse}td,th{padding:10px;border:1px solid #bbb}img{max-width:100%}video{width:480px;max-width:100%}</style>
+<h1>同じ初期状態・シードでの外乱比較</h1>
+<p>動画全フレーム・成功指標・外力記録を検証済み。初期状態と外力前の軌跡も比較しています。各条件2試行の探索的実験です。</p>
+<p>灰色は力を加える時間帯。変位は初期位置からの値で、把持後の動きも含みます。外乱なしでも失敗するシードは、成功例への外乱の評価から分けて扱ってください。外乱なしの成功を確認して選んだシードなので、一般的な成功率の推定には使えません。</p>
+<table><tr><th>条件</th><th>seed</th><th>力 Fx, Fy (N)</th><th>基準成功</th><th>成功</th><th>成功まで(s)</th><th>外力ステップ数</th><th>パルス完了</th><th>パルス終了時の基準との差(cm)</th></tr>
+<tr><td>baseline</td><td>1</td><td>0, 0</td><td>1</td><td>1</td><td>3.35</td><td>0</td><td>1</td><td>0.000</td></tr>
+<tr><td>push_x_1n</td><td>1</td><td>1, 0</td><td>1</td><td>0</td><td>None</td><td>3</td><td>1</td><td>4.970</td></tr>
+<tr><td>push_x_1p5n</td><td>1</td><td>1.5, 0</td><td>1</td><td>0</td><td>None</td><td>3</td><td>1</td><td>12.070</td></tr>
+<tr><td>push_minus_x_1n</td><td>1</td><td>-1, 0</td><td>1</td><td>1</td><td>3.25</td><td>3</td><td>1</td><td>4.970</td></tr>
+<tr><td>baseline</td><td>2</td><td>0, 0</td><td>1</td><td>1</td><td>3.4</td><td>0</td><td>1</td><td>0.000</td></tr>
+<tr><td>push_x_1n</td><td>2</td><td>1, 0</td><td>1</td><td>1</td><td>5.7</td><td>3</td><td>1</td><td>5.520</td></tr>
+<tr><td>push_x_1p5n</td><td>2</td><td>1.5, 0</td><td>1</td><td>0</td><td>None</td><td>3</td><td>1</td><td>13.281</td></tr>
+<tr><td>push_minus_x_1n</td><td>2</td><td>-1, 0</td><td>1</td><td>1</td><td>3.7</td><td>3</td><td>1</td><td>5.520</td></tr>
+</table><p>パルス完了=0は、その時間帯までに試行が終了したケースです。外乱を完了した比較として数えません。</p>
+<img src="comparison_pair00_seed1.png">
+<img src="comparison_pair01_seed2.png">
+<h3>baseline / seed 1</h3><video controls preload="metadata" src="baseline/videos/x00_y00_trial00.mp4"></video>
+<h3>push_x_1n / seed 1</h3><video controls preload="metadata" src="push_x_1n/videos/x00_y00_trial00.mp4"></video>
+<h3>push_x_1p5n / seed 1</h3><video controls preload="metadata" src="push_x_1p5n/videos/x00_y00_trial00.mp4"></video>
+<h3>push_minus_x_1n / seed 1</h3><video controls preload="metadata" src="push_minus_x_1n/videos/x00_y00_trial00.mp4"></video>
+<h3>baseline / seed 2</h3><video controls preload="metadata" src="baseline/videos/x00_y00_trial01.mp4"></video>
+<h3>push_x_1n / seed 2</h3><video controls preload="metadata" src="push_x_1n/videos/x00_y00_trial01.mp4"></video>
+<h3>push_x_1p5n / seed 2</h3><video controls preload="metadata" src="push_x_1p5n/videos/x00_y00_trial01.mp4"></video>
+<h3>push_minus_x_1n / seed 2</h3><video controls preload="metadata" src="push_minus_x_1n/videos/x00_y00_trial01.mp4"></video>

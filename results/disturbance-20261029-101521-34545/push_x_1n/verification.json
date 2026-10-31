@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "complete": true,
+  "run_status": "completed",
+  "allow_partial": false,
+  "episodes": 2,
+  "expected_episodes": 2,
+  "uncommitted_videos": [],
+  "videos": [
+    {
+      "video_path": "videos/x00_y00_trial00.mp4",
+      "frames": 201,
+      "fps": 20.0,
+      "duration_s": 10.05,
+      "width": 640,
+      "height": 480,
+      "size_bytes": 691138,
+      "trajectory_steps": 200,
+      "metrics_replayed": true,
+      "snapshots_checked": 2
+    },
+    {
+      "video_path": "videos/x00_y00_trial01.mp4",
+      "frames": 115,
+      "fps": 20.0,
+      "duration_s": 5.75,
+      "width": 640,
+      "height": 480,
+      "size_bytes": 449994,
+      "trajectory_steps": 114,
+      "metrics_replayed": true,
+      "snapshots_checked": 2
+    }
+  ],
+  "scope": "Committed episodes: CSV consistency, metric replay, initial/final snapshots, complete MP4 decoding. Does not certify policy quality or target-PC compatibility"
+}

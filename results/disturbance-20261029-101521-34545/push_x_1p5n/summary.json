@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "completed_episodes": 2,
+  "expected_episodes": 2,
+  "complete": true,
+  "run_status": "completed",
+  "successes": 0,
+  "points": [
+    {
+      "point_id": "x00_y00",
+      "x_m": 0.0,
+      "y_m": 0.0,
+      "n_trials": 2,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "wilson_low": 0.0,
+      "wilson_high": 0.6576197724933469,
+      "mean_success_time_s": null,
+      "mean_elapsed_s": 10.0,
+      "max_height_m": 0.001299437096656142
+    }
+  ]
+}
